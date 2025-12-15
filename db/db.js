@@ -5,11 +5,10 @@ dotenv.config();
 
 const pool = new Pool({
   ssl: {
-    rejectUnauthorized: false, // Render uchun kerak
+    rejectUnauthorized: false, 
   },
 });
 
-// DB ulanish xatolari
 pool
   .connect()
   .then(() => console.log("Database ulandi"))

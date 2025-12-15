@@ -5,6 +5,7 @@ const pool = require("./db/db.js")
 
 app.use(express.json());
 
+
 app.listen(3000, () => {
   console.log("Server 3000 portda ishlamoqda");
 });

@@ -1,17 +1,18 @@
-const { Pool } = require("pg");
+const dotenv = require("dotenv");
+const {Pool} = require("pg");
+
+dotenv.config();
 
 const pool = new Pool({
-  host: "localhost",
-  user: "postgres",
-  password: "password",
-  database: "",
-  port: 5432,
+  ssl: {
+    rejectUnauthorized: false, // Render uchun kerak
+  },
 });
 
 // DB ulanish xatolari
-pool.connect()
-    .then(() => console.log("Database ulandi"))
-    .catch((err) => console.log("Database ulanishda xatolik:", err));
-
+pool
+  .connect()
+  .then(() => console.log("Database ulandi"))
+  .catch((err) => console.log("Database ulanishda xatolik:", err));
 
 module.exports = pool;

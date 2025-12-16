@@ -7,14 +7,14 @@ const pool = require("./db/db.js")
 // Routes
 
 const customerRoutes = require("./routes/customerRoutes.js");
-const reviewsRoutes = require("./routes/reviewsRoutes.js");
+const paymentsRoutes = require("./routes/paymentsRoutes.js");
 
 // APIs
 
 // Sardorxon
 
 app.use("/customers",customerRoutes);
-app.use("/reviews",reviewsRoutes);
+app.use("/payments",paymentsRoutes);
 
 
 app.listen(3000, () => {

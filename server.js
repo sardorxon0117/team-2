@@ -9,6 +9,8 @@ app.use(express.json());
 const customerRoutes = require("./routes/customerRoutes.js");
 const paymentsRoutes = require("./routes/paymentsRoutes.js");
 
+// Sardorxon
+
 app.use("/customers",customerRoutes);
 app.use("/payments",paymentsRoutes);
 

@@ -5,7 +5,7 @@ dotenv.config();
 
 const pool = new Pool({
   ssl: {
-    rejectUnauthorized: false, 
+    rejectUnauthorized: false, // Render uchun kerak
   },
 });
 

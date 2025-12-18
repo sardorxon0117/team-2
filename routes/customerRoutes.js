@@ -1,5 +1,4 @@
 const express = require("express");
-const pool = require("../db/db.js");
 const { getAllUsers, getUserById, createCustomer, editCustomer, deleteCustomer, allCustomerBooking, allCustomerReviews } = require("../controllers/customerController.js");
 
 const route = express.Router();

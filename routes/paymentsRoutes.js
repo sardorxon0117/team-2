@@ -1,5 +1,4 @@
 const express = require("express");
-const pool = require("../db/db.js");
 const { getAllPatments, getPaymentById, createPaymentForBooking, paymentCustomerAndBooking } = require("../controllers/paymentsController.js");
 
 
